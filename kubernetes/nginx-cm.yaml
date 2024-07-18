@@ -6,13 +6,11 @@ metadata:
 data:
   default.conf: |
     server {
-    server_name vitaliypryhodko.site;
-    listen 80;
-    location / {
-        proxy_set_header Host $host;
-        proxy_set_header X-Real-IP $remote_addr;
-        proxy_pass http://art-service:80;
+        server_name vitaliypryhodko.site;
+        listen 80;
+        location / {
+            proxy_set_header Host $host;
+            proxy_set_header X-Real-IP $remote_addr;
+            proxy_pass http://art-service:80;
+        }
     }
-}
-
-
