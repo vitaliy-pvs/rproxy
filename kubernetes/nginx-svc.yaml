@@ -4,7 +4,7 @@
    name: nginx-svc
    namespace: default
    annotations:
-     metallb.universe.tf/loadBalancerIPs: 195.58.54.98
+     metallb.universe.tf/loadBalancerIPs: 194.87.147.125
  spec:
    type: LoadBalancer
    selector:
