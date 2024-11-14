@@ -6,7 +6,7 @@ metadata:
 data:
   default.conf: |
     server {
-        server_name vitaliypryhodko.site;
+        server_name vitaliypryhodko.fvds.ru;
         listen 80;
         location / {
             proxy_set_header Host $host;
